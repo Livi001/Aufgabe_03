@@ -1,4 +1,6 @@
-﻿namespace calculator
+﻿using System;
+
+namespace calculator
 {
     internal class Program
     {
@@ -17,7 +19,15 @@
             Console.WriteLine("Multiplikation: " + calc.Multiply(a, b));
             Console.WriteLine("Division: " + calc.Divide(a, b));
 
-            
+            // Beispiel: Zweiter Durchlauf mit nur einem Parameter(verwendet das letzte Ergebnis)
+            Console.WriteLine("Bitte geben Sie einen weiteren Wert ein:");
+            int c = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Addition mit internem Zustand: " + calc.Add(c));
+            Console.WriteLine("Subtraktion mit internem Zustand: " + calc.Subtract(c));
+            Console.WriteLine("Multiplikation mit internem Zustand: " + calc.Multiply(c));
+            Console.WriteLine("Division mit internem Zustand: " + calc.Divide(c));
+
         }
     }
 }

@@ -38,12 +38,39 @@ namespace calculator
             lastResult = a / b;
             return lastResult;
         }
+        // Methode für Addition mit einem Parameter
+        public int Add(int a)
+        {
+            lastResult = lastResult + a;
+            return lastResult;
+        }
 
-        
+        // Methode für Subtraktion mit einem Parameter
+        public int Subtract(int a)
+        {
+            lastResult = lastResult - a;
+            return lastResult;
+        }
+
+        // Methode für Multiplikation mit einem Parameter
+        public int Multiply(int a)
+        {
+            lastResult = lastResult * a;
+            return lastResult;
+        }
+
+        // Methode für Division mit einem Parameter
+        public int Divide(int a)
+        {
+            lastResult = lastResult / a;
+            return lastResult;
+        }
     }
 
 
-
 }
+
+
+
 
 
